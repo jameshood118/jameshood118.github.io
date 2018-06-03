@@ -5,9 +5,11 @@
         <nav-bar />
       </div>
     </div>
-    <div class="columns">
-      <div class="column">
-        <router-view/>
+    <div class="container is-fluid">
+      <div class="columns">
+        <div class="column">
+          <router-view/>
+        </div>
       </div>
     </div>
 

@@ -1,28 +1,30 @@
 <template>
-  <div class="columns">
-    <div class="column">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            About</p>
-        </header>
-        <div class="card-content">
-          <p>My name is James Hood, I am a Full Stack Web Developer. I work with a wide array of tools. My languages include: PHP/MySQL, Javascript, Jquery, HTML(5), CSS(3), Actionscript 2.0/3.0, XML, ASP.net (C# and VB) and a smattering of C++, XSLT, Java. I have worked as a graphic designer and as a web developer, and in my own personal freelance work I have often been both at the same time. Recently I have brought new skills into my briefcase, these include: Shipping and Logistics, Ecommerce data entry, Amazon Vendor Central compliance, EDI data exchange as well as Quickbooks online. I have become more than just a Web Developer, and much more than just a face in the crowd.</p>
-          <p>These days its refreshing to find someone who can do multiple things, who can learn multiple skills, and run with that. The days of 1 skill per 1 employee is over. That just doesnt work these days.</p>
-          <p>I have had the pleasure of working with some very talented individuals, and I have made an impression:</p>
+  <div>
+    <div class="columns">
+      <div class="column">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              About</p>
+          </header>
+          <div class="card-content">
+            <p>My name is James Hood, I am a Full Stack Web Developer. I work with a wide array of tools. My languages include: PHP/MySQL, Javascript, Jquery, HTML(5), CSS(3), Actionscript 2.0/3.0, XML, ASP.net (C# and VB) and a smattering of C++, XSLT, Java. I have worked as a graphic designer and as a web developer, and in my own personal freelance work I have often been both at the same time. Recently I have brought new skills into my briefcase, these include: Shipping and Logistics, Ecommerce data entry, Amazon Vendor Central compliance, EDI data exchange as well as Quickbooks online. I have become more than just a Web Developer, and much more than just a face in the crowd.</p>
+            <p>These days its refreshing to find someone who can do multiple things, who can learn multiple skills, and run with that. The days of 1 skill per 1 employee is over. That just doesnt work these days.</p>
+            <p>I have had the pleasure of working with some very talented individuals, and I have made an impression:</p>
+          </div>
         </div>
       </div>
-      <div class="columns">
-        <div class="column is-half" v-for="recs in recommend" :key="recs.person">
-          <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">
-                {{recs.person}}
-              </p>
-              <p class="subtitle is-6">{{recs.title}}</p>
-            </header>
-            <div class="card-content" v-html="recs.text"></div>
-          </div>
+    </div>
+    <div class="columns">
+      <div class="column " v-for="recs in recommend" :key="recs.person">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              {{recs.person}}
+            </p>
+            <p class="subtitle">{{recs.title}}</p>
+          </header>
+          <div class="card-content" v-html="recs.text"></div>
         </div>
       </div>
     </div>
