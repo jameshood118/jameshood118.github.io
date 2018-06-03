@@ -15,15 +15,14 @@
         </div>
       </div>
     </div>
-    <div class="columns">
-      <div class="column " v-for="recs in recommend" :key="recs.person">
+    <div class="columns is-multiline is-mobile">
+      <div class="column is-6" v-for="recs in recommend" :key="recs.person">
         <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              {{recs.person}}
-            </p>
-            <p class="subtitle">{{recs.title}}</p>
-          </header>
+          <div class="media-content">
+            <p class="title is-4">{{recs.person}}</p>
+            <p class="subtitle is-6">{{recs.title}}</p>
+            <hr/>
+          </div>
           <div class="card-content" v-html="recs.text"></div>
         </div>
       </div>
