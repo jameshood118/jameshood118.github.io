@@ -9,28 +9,28 @@
         </div>
         <div class="navbar-menu">
             <div class="navbar-start"></div>
-            <router-link :to="{path: '/home'}" class="navbar-item">
+            <router-link :to="{path: '/home'}" class="navbar-item has-text-white">
                 Home
             </router-link>
-            <router-link :to="{path: '/about'}" class="navbar-item">
+            <router-link :to="{path: '/about'}" class="navbar-item has-text-white">
                 About
             </router-link>
-            <router-link :to="{path: '/resume'}" class="navbar-item">
+            <router-link :to="{path: '/resume'}" class="navbar-item has-text-white">
                 Resume
             </router-link>
-            <router-link :to="{path: '/contact'}" class="navbar-item">
+            <router-link :to="{path: '/contact'}" class="navbar-item has-text-white">
                 Contact
             </router-link>
-            <router-link :to="{path: '/thoughts'}" class="navbar-item">
+            <router-link :to="{path: '/thoughts'}" class="navbar-item has-text-white">
                 Thoughts
             </router-link>
-            <router-link :to="{path: '/profiles'}" class="navbar-item">
+            <router-link :to="{path: '/profiles'}" class="navbar-item has-text-white">
                 Profiles
             </router-link>
-            <router-link :to="{path: '/code'}" class="navbar-item">
+            <router-link :to="{path: '/code'}" class="navbar-item has-text-white">
                 Code Samples
             </router-link>
-            <router-link :to="{path: '/sites'}" class="navbar-item">
+            <router-link :to="{path: '/sites'}" class="navbar-item has-text-white">
                 Sites
             </router-link>
             <div class="navbar-end"></div>
@@ -47,7 +47,8 @@ export default {
 </script>
 
 <style scoped>
-.navbar-item {
-  color: white;
+.navbar-item:hover {
+  color: hsl(0, 0%, 96%);
+  background-color: hsl(0, 0%, 21%);
 }
 </style>

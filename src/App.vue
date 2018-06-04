@@ -6,11 +6,7 @@
       </div>
     </div>
     <div class="container is-fluid">
-      <div class="columns">
-        <div class="column">
-          <router-view/>
-        </div>
-      </div>
+      <router-view/>
     </div>
 
   </div>
