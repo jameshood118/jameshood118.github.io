@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import Bulma from "bulma"
 import NavBar from "./components/Navbar.vue"
 
 export default {

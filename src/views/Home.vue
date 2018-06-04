@@ -2,10 +2,10 @@
   <div class="columns is-multiline">
     <div class="column is-12">
       <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            {{title}} </p>
-        </header>
+        <div class="card-content">
+          <p class="title is-6">{{title}}
+          </p>
+        </div>
         <div class="card-content">
           <div class="content">
             <p>This website is to represent myself to the corporate world, and as such this site contains my artwork, and my web development work. It also happens to contain various side projects: Music, various video/audio projects I will work on from time to time, and other side projects. I also use this site as a means to test out code that I am working on, or have been tasked to do. </p>
@@ -17,12 +17,11 @@
     </div>
     <div class="column">
       <div class="card" v-for="items in home" :key="items.title">
-        <header class="card-header">
-          <p class="card-header-title">
-            {{items.title}} -
+        <div class="card-content">
+          <p class="title is-6"> {{items.title}} -
             <time :datetime="items.date">{{items.date}}</time>
           </p>
-        </header>
+        </div>
         <div class="card-content">
           <div class="content" v-html="items.message">
           </div>
