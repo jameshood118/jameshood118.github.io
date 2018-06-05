@@ -8,4 +8,4 @@ Several years later I replaced that portfolio with others, using different techn
 
 ## Purpose
 
-Stand up a repo, using more narrowly focused technologies, those technlogies being the ones I truly feel passionate about and want to focus on.
+Stand up a repo, using more narrowly focused technologies, those technologies being the ones I truly feel passionate about and want to focus on.

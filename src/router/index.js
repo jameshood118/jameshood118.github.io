@@ -6,10 +6,8 @@ import About from "@/views/About";
 import Code from "@/views/Code";
 import Contact from "@/views/Contact";
 import Home from "@/views/Home";
-import Profiles from "@/views/Profiles";
 import Resume from "@/views/Resume";
 import Sites from "@/views/Sites";
-import Thoughts from "@/views/Thoughts";
 
 Vue.use(Router);
 
@@ -36,20 +34,12 @@ export default new Router({
       component: Home
     },
     {
-      path: "/Profiles",
-      component: Profiles
-    },
-    {
       path: "/Resume",
       component: Resume
     },
     {
       path: "/Sites",
       component: Sites
-    },
-    {
-      path: "/Thoughts",
-      component: Thoughts
     }
   ]
 });

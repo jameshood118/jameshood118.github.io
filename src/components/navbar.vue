@@ -21,12 +21,6 @@
             <router-link :to="{path: '/contact'}" class="navbar-item has-text-white">
                 Contact
             </router-link>
-            <router-link :to="{path: '/thoughts'}" class="navbar-item has-text-white">
-                Thoughts
-            </router-link>
-            <router-link :to="{path: '/profiles'}" class="navbar-item has-text-white">
-                Profiles
-            </router-link>
             <router-link :to="{path: '/code'}" class="navbar-item has-text-white">
                 Code Samples
             </router-link>
